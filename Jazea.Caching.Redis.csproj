@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Jazea.org</Authors>
+    <Description>.NetCore Caching Extensions for Redis</Description>
+    <Copyright>©2018 Jazea.org</Copyright>
+    <PackageProjectUrl>https://github.com/jazea</PackageProjectUrl>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/12891248</PackageIconUrl>
+    <PackageTags>.netcore cache caching redis</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CacheManager.StackExchange.Redis" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Configuration\Jazea.Configuration.Abstractions\Jazea.Configuration.Abstractions.csproj" />
+    <ProjectReference Include="..\Jazea.Caching.Abstractions\Jazea.Caching.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
